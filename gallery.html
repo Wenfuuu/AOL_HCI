@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    
+    <header>
+        <h3>PLAY <span class="highlight-header">ASPATL REJENDS</span> TO BECOME LEGENDS!!</h3>
+    </header>
+
+    <nav>
+        <div id="navbar">
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a id="active" href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="esports.html">ESPORTS</a></li>
+                <li><a href="subscription.html">SUBSCRIPTION</a></li>
+                <li id="downloads"><a id="download" href="https://gmlft.co/A9-Download-Web" target="_blank">DOWNLOAD</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slider S Class -->
+    <div class="slider" id="slider1">
+        <p class="tier">S Class</p>
+        <div class="slides">
+            <div class="cars">
+                <img src="assets/Cars/S_class/Bugatti-Chiron.webp" alt="" class="slide">
+                <p>Bugatti Chiron</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/S_class/Koenigsegg-Regera.webp" alt="" class="slide">
+                <p>Koenigsegg Regera</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/S_class/Lamborghini-Terzo-Millennio.webp" alt="" class="slide">
+                <p>Lamborghini Terzo Millennio</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/S_class/McLaren-Senna.webp" alt="" class="slide">
+                <p>McLaren Senna</p>
+            </div>
+        </div>
+        <button class="prev" onclick="S_prevSlide()">&#10094</button>
+        <button class="next" onclick="S_nextSlide()">&#10095</button>
+    </div>
+
+    <!-- Slider A Class -->
+    <div class="slider" id="slider2">
+        <p class="tier">A Class</p>
+        <div class="slides">
+            <div class="cars">
+                <img src="assets/Cars/A_class/Ferrari-LaFerrari.webp" alt="" class="slide">
+                <p>Ferrari LaFerrari</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/A_class/Lamborghini-Aventador-J.webp" alt="" class="slide">
+                <p>Lamborghini Aventador J</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/A_class/McLaren-570S-Spider.webp" alt="" class="slide">
+                <p>McLaren 570s Spider</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/A_class/Porsche-918-Spyder.webp" alt="" class="slide">
+                <p>Porsche 918 Spyder</p>
+            </div>
+        </div>
+        <button class="prev" onclick="A_prevSlide()">&#10094</button>
+        <button class="next" onclick="A_nextSlide()">&#10095</button>
+    </div>
+
+    <!-- Slider B Class -->
+    <div class="slider" id="slider3">
+        <p class="tier">B Class</p>
+        <div class="slides">
+            <div class="cars">
+                <img src="assets/Cars/B_class/Aston-Martin-DB11.webp" alt="" class="slide">
+                <p>Aston Martin DB11</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/B_class/Ford-GT.webp" alt="" class="slide">
+                <p>Ford GT</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/B_class/Lamborghini-Asterion.webp" alt="" class="slide">
+                <p>Lamborghini Asterion</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/B_class/SCG-003S.webp" alt="" class="slide">
+                <p>SCG 003S</p>
+            </div>
+        </div>
+        <button class="prev" onclick="B_prevSlide()">&#10094</button>
+        <button class="next" onclick="B_nextSlide()">&#10095</button>
+    </div>
+
+    <!-- Slider C Class -->
+    <div class="slider" id="slider4">
+        <p class="tier">C Class</p>
+        <div class="slides">
+            <div class="cars">
+                <img src="assets/Cars/C_class/BMW-M4-GTS.webp" alt="" class="slide">
+                <p>BMW M4 GTS</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/C_class/Dodge-Viper-ACR.webp" alt="" class="slide">
+                <p>Dodge Viper ACR</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/C_class/Lotus-Evora-Sport-410.webp" alt="" class="slide">
+                <p>Lotus Evora Sport 410</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/C_class/Rezvani-Beast-X.webp" alt="" class="slide">
+                <p>Rezvani Beast X</p>
+            </div>
+        </div>
+        <button class="prev" onclick="C_prevSlide()">&#10094</button>
+        <button class="next" onclick="C_nextSlide()">&#10095</button>
+    </div>
+
+    <!-- Slider D Class -->
+    <div class="slider" id="slider5">
+        <p class="tier">D Class</p>
+        <div class="slides">
+            <div class="cars">
+                <img src="assets/Cars/D_class/BMW-Z4-LCI-E89.webp" alt="" class="slide">
+                <p>BMW Z4 LCI E89</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/D_class/Ford-Shelby-GT350R.webp" alt="" class="slide">
+                <p>Ford Shelby GT350R</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/D_class/Ginetta-G60.webp" alt="" class="slide">
+                <p>Ginetta G60</p>
+            </div>
+            <div class="cars">
+                <img src="assets/Cars/D_class/Porsche-718-Cayman.webp" alt="" class="slide">
+                <p>Porsche 718 Cayman</p>
+            </div>
+        </div>
+        <button class="prev" onclick="D_prevSlide()">&#10094</button>
+        <button class="next" onclick="D_nextSlide()">&#10095</button>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <h2>KEEP UP WITH ASPHALT UPDATES</h2>
+            <div id="social-media">
+                <a href="https://gmlft.co/A9_FB_Website" target="_blank"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://gmlft.co/A9_TW_Website" target="_blank"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://gmlft.co/A9_IG_Website" target="_blank"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://gmlft.co/A9_YT_Website" target="_blank"><img src="assets/youtube-icon.png" alt="YouTube"></a>
+                <a href="https://discord.com/invite/asphalt9" target="_blank"><img src="assets/discord-icon.png" alt="Discord"></a>
+                <a href="https://gmlft.co/A9-TT-Website" target="_blank"><img src="assets/tiktok-icon.png" alt="TikTok"></a>
+            </div>
+            <div id="legal-links">
+                <a href="https://www.gameloft.com/en/conditions-of-use/" target="_blank">TERMS & CONDITIONS</a>
+                <a href="https://www.gameloft.com/en/information/legal-notices" target="_blank">LEGAL NOTICES</a>
+                <a href="https://www.gameloft.com/en/eula" target="_blank">EULA</a>
+                <a href="https://www.gameloft.com/en/legal/policy-pre-reg/" target="_blank">COOKIE POLICY</a>
+                <a href="https://www.gameloft.com/en/privacy-notice/" target="_blank">PRIVACY POLICY</a>
+            </div>
+            <div id="footer-credits">
+                <img src="assets/gameloft-logo.webp" alt="Gameloft Logo">
+                <p>© 2018 Gameloft. All Rights Reserved. Gameloft, the Gameloft logo and Asphalt are trademarks of Gameloft in the U.S. and/or other countries. All manufacturers, cars, names, brands and associated imagery featured in the Asphalt 9: Legends mobile game are trademarks and/or copyrighted materials of their respective owners.</p>
+                <p>Nintendo trademarks and copyrights are properties of Nintendo.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="gallery.js"></script>
+</body>
+</html>

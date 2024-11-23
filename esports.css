@@ -1,0 +1,299 @@
+body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #0a0a23;
+}
+
+header{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.122);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 1;
+}
+header .highlight-header{
+    color: rgb(255, 20, 75);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+#menu-toggle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar li a{
+    color: white;
+    font-size: 1.2em;
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: border-bottom 0.15s;
+}
+#navbar a#download{
+    background-color: greenyellow;
+    font-size: 1.1em;
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#navbar li#downloads:hover{
+    transition: transform 0.25s;
+}
+#navbar li#downloads:hover{
+    transform: scale(1.1);
+}
+#navbar li a#active{
+    border-bottom: 5px solid red;
+}
+#navbar li a:hover{
+    border-bottom: 5px solid red;
+}
+
+#trailer-container{
+    width: 100%;
+    max-height: 1080px;
+}
+#trailer-container video{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#esports-detail{
+    text-align: center;
+    padding: 50px 0px;
+    background-image: url(assets/esports_background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#esports-detail #highlight-title{
+    color: rgb(202, 9, 89);;
+}
+#esports-detail h2{
+    color: white;
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#esports-detail #detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#esports-detail .stat{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: font-size 0.25s;
+}
+#esports-detail .stat:hover{
+    font-size: 1.1em;
+}
+#esports-detail .stat img{
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+#esports-detail .stat .value{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ca0959;;
+}
+#esports-detail .stat .description{
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#sponsor-container{
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    background-image: url(assets/sponsor_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+#sponsor-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+#sponsor-container h2{
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+#sponsor-container h4{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+#sponsor-container #logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+#sponsor-container .detail{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#sponsor-container .detail img{
+    max-height: 80px;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+footer{
+    background-image: url(assets/footer_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#footer-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+footer h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#social-media{
+    margin: 20px 0;
+}
+#social-media a{
+    margin: 0 10px;
+    display: inline-block;
+}
+#social-media img{
+    width: 60px;
+    margin-bottom: 50px;
+    transition: transform 0.25s;
+}
+#social-media a:hover img{
+    transform: scale(1.2);
+}
+#legal-links{
+    margin: 20px 0;
+}
+#legal-links a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+#legal-links a:hover{
+    text-decoration: underline;
+}
+#footer-credits{
+    margin-top: 20px;
+}
+#footer-credits img{
+    height: 70px;
+    margin-bottom: 20px;
+}
+#footer-credits p{
+    line-height: 1.5;
+    color: #bbb;
+}
+
+@media screen and (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        right: 0;
+        top: 7%;
+        width: 100%;
+        height: auto;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #navbar ul{
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        transform: translateY(-190%);
+        transition: transform 0.3s ease-out;
+    }
+    #navbar ul.show{
+        display: flex;
+        transform: translateY(0%);
+        transition: transform 0.3s ease-out;
+    }
+    #navbar li{
+        margin: 30px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar li a{
+        padding: 15px;
+    }
+    #navbar #download{
+        margin: 0;
+        width: 100%;
+    }
+}

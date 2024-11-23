@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #0a0a23;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(assets/gallery_background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    color: white;
+    background-color: #8080801f;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 1;
+}
+header .highlight-header{
+    color: rgb(255, 20, 75);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+#menu-toggle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar li a{
+    color: white;
+    font-size: 1.2em;
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: border-bottom 0.15s;
+}
+#navbar a#download{
+    background-color: greenyellow;
+    font-size: 1.1em;
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#navbar li#downloads:hover{
+    transition: transform 0.25s;
+}
+#navbar li#downloads:hover{
+    transform: scale(1.1);
+}
+#navbar li a#active{
+    border-bottom: 5px solid red;
+}
+#navbar li a:hover{
+    border-bottom: 5px solid red;
+}
+
+#subscription-form-container{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+}
+#subscription-form{
+    display: flex;
+    gap: 15px;
+}
+#form-header{
+    text-align: left;
+}
+#form-header h1{
+    font-size: 1.5em;
+    color: #ff1453;
+    margin: 0;
+}
+#form-header p{
+    font-size: 1.2em;
+    margin: 5px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+form select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+form option{
+    color: black;
+}
+#gender-container{
+    margin: 10px 0px;
+}
+#birthday{
+    display: flex;
+    gap: 10px;
+}
+#checkboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#checkboxes label{
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+#checkboxes input{
+    margin-right: 10px;
+}
+button[type="submit"]{
+    padding: 15px;
+    background-color: #c3ff00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: #a3e600;
+}
+
+@media screen and (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        right: 0;
+        top: 7%;
+        width: 100%;
+        height: auto;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #navbar ul{
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        transform: translateY(-190%);
+        transition: transform 0.3s ease-out;
+    }
+    #navbar ul.show{
+        display: flex;
+        transform: translateY(0%);
+        transition: transform 0.3s ease-out;
+    }
+    #navbar li{
+        margin: 30px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar li a{
+        padding: 15px;
+    }
+    #navbar #download{
+        margin: 0;
+        width: 100%;
+    }
+
+    #subscription-form{
+        flex-direction: column;
+    }
+}
