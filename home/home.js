@@ -7,6 +7,5 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
-
-
-//github ngennnnn
+console.log("HAAHAHAHA")
+console.log("dudung")
