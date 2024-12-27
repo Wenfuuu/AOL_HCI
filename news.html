@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <title>News</title>
+    <link rel="stylesheet" href="news.css">
 </head>
 <body>
     <header>
@@ -15,33 +15,56 @@
         <div id="navbar">
             <button id="menu-toggle">☰</button>
             <ul id="menu">
-                <li><a id="active" href="../home/home.html">HOME</a></li>
-                <li><a href="../gallery/gallery.html">GALLERY</a></li>
-                <li><a href="../news/news.html">NEWS</a></li>
-                <li><a href="../esports/esports.html">ESPORTS</a></li>
-                <li><a href="../subscription/subscription.html">SUBSCRIPTION</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a id="active" href="news.html">NEWS</a></li>
+                <li><a href="esports.html">ESPORTS</a></li>
+                <li><a href="subscription.html">SUBSCRIPTION</a></li>
                 <li id="downloads"><a id="download" href="https://gmlft.co/A9-Download-Web" target="_blank">DOWNLOAD</a></li>
             </ul>
         </div>
     </nav>
 
-    <div id="trailer-container">
-        <img id="logo" src="assets/logo.png" alt="">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cwwdPuIqGfc" title="Asphalt 9 - Black Friday Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </iframe>
-    </div>
-
-    <div id="content">
-        <div id="about">
-            <h1>ABOUT</h1>
-            <p><span class="highlight-new">Asphalt 9: Legends</span> is a 2018 racing game developed by Gameloft Barcelona and published by Gameloft. Released on July 25, 2018, it's the fifteenth major game of Asphalt series.</p>
+    <div id="news-container">
+        <div class="news-item">
+            <img src="assets/News/summercharged-news.webp" alt="News Image 1">
+            <div class="news-details">
+                <h2>SUMMERCHARGED SUMMER I & II PATCH NOTES</h2>
+                <p class="date">Published on: May 22, 2024</p>
+                <p class="duration">Read duration: 7 min</p>
+            </div>
         </div>
-        <div id="whatsnew">
-            <h1>WHAT'S NEW</h1>
-            <h2 id="super">SUPERCHARGED</h2>
-            <h2 id="summer">SUMMER I & II SEASONS</h2>
-            <p>Level up your game with exciting new rides in the Supercharged Summer I & II! <span class="highlight-new">Five new rides,</span>  and tons of new events are about to be unleashed!
-            Take a peek at all the latest coming your way with the SUPERCHARGED SUMMER I and II seasons.</p>
+        <div class="news-item">
+            <img src="assets/News/koreanfood-news.webp" alt="News Image 2">
+            <div class="news-details">
+                <h2>KOREAN FOOD FESTIVAL SPECIAL EVENT</h2>
+                <p class="date">Published on: April 16, 2024</p>
+                <p class="duration">Read duration: 5 min</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="assets/News/eurobloom-news.webp" alt="News Image 2">
+            <div class="news-details">
+                <h2>WEST TO EAST & EUROBLOOM SEASON PATCH NOTES</h2>
+                <p class="date">Published on: April 8, 2024</p>
+                <p class="duration">Read duration: 8 min</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="assets/News/asphalt-unite.webp" alt="News Image 2">
+            <div class="news-details">
+                <h2>ASPHALT LEGENDS UNITE IS COMING JULY 17TH</h2>
+                <p class="date">Published on: March 27, 2024</p>
+                <p class="duration">Read duration: 3 min</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="assets/News/overclock-news.webp" alt="News Image 2">
+            <div class="news-details">
+                <h2>OVERCLOCK: NEW FEATURE</h2>
+                <p class="date">Published on: February 19, 2024</p>
+                <p class="duration">Read duration: 5 min</p>
+            </div>
         </div>
     </div>
 
@@ -71,6 +94,6 @@
         </div>
     </footer>
 
-    <script src="home.js"></script>
+    <script src="news.js"></script>
 </body>
 </html>
