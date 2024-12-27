@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(assets/gallery_background.webp);
+    background-image: url(../assets/gallery_background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

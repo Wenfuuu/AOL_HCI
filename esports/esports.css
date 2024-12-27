@@ -94,7 +94,7 @@ nav{
 #esports-detail{
     text-align: center;
     padding: 50px 0px;
-    background-image: url(assets/esports_background.webp);
+    background-image: url(../assets/esports_background.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@ nav{
     color: white;
     text-align: center;
     padding: 50px 0px;
-    background-image: url(assets/sponsor_background.jpg);
+    background-image: url(../assets/sponsor_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +199,7 @@ nav{
 }
 
 footer{
-    background-image: url(assets/footer_background.webp);
+    background-image: url(../assets/footer_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
