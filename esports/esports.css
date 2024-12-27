@@ -24,7 +24,7 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
-#navbar {
+#navbar{
     position: fixed;
     top: 100px;
     right: 0;
@@ -79,50 +79,127 @@ nav{
     border-bottom: 5px solid red;
 }
 
-#news-container{
-    padding: 200px 20px 20px;
-    background-image: url(assets/gallery_background.webp);
+#trailer-container{
+    width: 100%;
+    max-height: 1080px;
+}
+#trailer-container video{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
-.news-item{
+
+#esports-detail{
+    text-align: center;
+    padding: 50px 0px;
+    background-image: url(../assets/esports_background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#esports-detail #highlight-title{
+    color: rgb(202, 9, 89);;
+}
+#esports-detail h2{
+    color: white;
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#esports-detail #detail{
     display: flex;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#esports-detail .stat{
+    background-color: white;
+    padding: 10px;
     border-radius: 10px;
-    transition: font-size 0.25s;
-}
-.news-item:hover{
-    font-size: 1.1em;
-}
-.news-item img{
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 15px;
-}
-.news-details{
+    text-align: center;
+    width: 150px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    transition: font-size 0.25s;
 }
-.news-details h2{
-    margin: 0 0 10px 0;
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: red;
+#esports-detail .stat:hover{
+    font-size: 1.1em;
 }
-.news-details .date,
-.news-details .duration{
-    margin: 0;
-    color: #bbb;
+#esports-detail .stat img{
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+#esports-detail .stat .value{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ca0959;;
+}
+#esports-detail .stat .description{
     font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#sponsor-container{
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    background-image: url(../assets/sponsor_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+#sponsor-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+#sponsor-container h2{
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+#sponsor-container h4{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+#sponsor-container #logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+#sponsor-container .detail{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#sponsor-container .detail img{
+    max-height: 80px;
+    margin-bottom: 10px;
+    max-width: 200px;
 }
 
 footer{
-    background-image: url(assets/footer_background.webp);
+    background-image: url(../assets/footer_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,7 +258,7 @@ footer h2{
     color: #bbb;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     #navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -218,16 +295,5 @@ footer h2{
     #navbar #download{
         margin: 0;
         width: 100%;
-    }
-}
-@media screen and (max-width: 500px){
-    #news-container{
-        padding: 200px 0px 0px 0px;
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 400px){
-    #news-container{
-        font-size: 0.6em;
     }
 }
