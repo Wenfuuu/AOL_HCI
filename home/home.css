@@ -80,7 +80,7 @@ nav{
 
 #trailer-container{
     overflow: hidden;
-    background-image: url(assets/main_background.webp) ;
+    background-image: url(../assets/main_background.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -102,7 +102,7 @@ nav{
 
 #content{
     overflow: hidden;
-    background-image: url(assets/beach_background.webp);
+    background-image: url(../assets/beach_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,7 +155,7 @@ nav{
 }
 
 footer{
-    background-image: url(assets/footer_background.webp);
+    background-image: url(../assets/footer_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

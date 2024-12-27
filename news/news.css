@@ -81,7 +81,7 @@ nav{
 
 #news-container{
     padding: 200px 20px 20px;
-    background-image: url(assets/gallery_background.webp);
+    background-image: url(../assets/gallery_background.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -122,7 +122,7 @@ nav{
 }
 
 footer{
-    background-image: url(assets/footer_background.webp);
+    background-image: url(../assets/footer_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
